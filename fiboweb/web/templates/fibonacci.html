@@ -1,0 +1,18 @@
+<div>
+    <form action="/" method="post">
+        {% csrf_token %}
+        <div>
+        {{ form }}
+        <input type="submit" value="Submit" />
+        </div>
+        {% if status == 'SUCCESS' %}
+        <div>
+            Fib - {{ nfib }}
+        </div>
+        {% endif %}
+    </form>
+</div>
+
+<div id="stats">
+    <!-- STATS: Time took to calculate: %(total_time).6fs ENDSTATS -->
+</div>
