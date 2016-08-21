@@ -5,14 +5,15 @@
         {{ form }}
         <input type="submit" value="Submit" />
         </div>
-        {% if status == 'SUCCESS' %}
-        <div>
-            Fib - {{ nfib }}
-        </div>
-        {% endif %}
     </form>
 </div>
 
-<div id="stats">
+{% if status == 'SUCCESS' %}
+    <div>
+        The {{ number }}th fibonacci number is: {{ nfib }}
+    </div>
+{% endif %}
+
+<div>
     <!-- STATS: Time took to calculate: %(total_time).6fs ENDSTATS -->
 </div>

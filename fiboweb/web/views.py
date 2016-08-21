@@ -15,6 +15,7 @@ def fibonacci(request):
                 'form': form,
                 'status': 'SUCCESS',
                 'nfib': nth_fibonacci,
+                'number': number,
             }
         else:
             ctx = {'form': form}
