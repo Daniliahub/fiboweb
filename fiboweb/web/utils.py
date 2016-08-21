@@ -72,6 +72,7 @@ class NthFibonacci(object):
         `number` variable should be a positive integer and here it defines
         position of a number in fibonacci sequence.
         """
+        assert number >= 0
         value = get_from_redis(number)
         latest = get_latest_position()
 

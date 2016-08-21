@@ -2,6 +2,11 @@
 fiboweb
 =======
 
+Live project
+============
+
+URL: http://fiboweb-developmet.rhcloud.com/
+
 Setup
 =====
 
@@ -49,3 +54,10 @@ Important parts of this project to look at:
 
 1. `fiboweb.web.utils.NthFibonacci` is the Fibonacci number generator.
 2. `fiboweb.web.middleware.ProcessTimeMiddleware` is the django view process time calculator.
+
+
+Run the tests
+=============
+```
+$ ./manage.py test
+```
